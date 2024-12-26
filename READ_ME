@@ -1,0 +1,35 @@
+This Python script allows users to upload a list of IP addresses from a CSV file to the AbuseIPDB API, retrieving detailed information about each IP address. The results are then saved to an output CSV file, making it easy to analyze and review the abuse data.
+Features
+Input CSV File: Accepts a CSV file containing IP addresses (one per line).
+API Integration: Utilizes the AbuseIPDB API to check each IP address for abuse-related information.
+Detailed Output: Outputs key parameters including:
+ipAddress
+isPublic
+ipVersion
+isWhitelisted
+abuseConfidenceScore
+country
+city (if available)
+usageType
+isp
+domain
+hostnames
+totalReports
+numDistinctUsers
+lastReportedAt
+Filter by Usage Type: Optionally filter results based on specific usage types (e.g., "Data Center/Web Hosting/Transit").
+Error Handling: Gracefully handles errors and missing data, ensuring robust performance.
+Requirements
+Python 3.x
+Requests library (pip install requests)
+A valid AbuseIPDB API key
+Usage
+Clone the repository or download the script.
+Prepare a CSV file with IP addresses (one per line).
+Update the script with your AbuseIPDB API key and specify the input and output file paths.
+Run the script to generate the output CSV file with abuse information.
+Example
+bash
+python abuse_ip_checker.py
+License
+This project is licensed under the MIT License. Feel free to customize any part of this description to better fit your project's style or specific details!
